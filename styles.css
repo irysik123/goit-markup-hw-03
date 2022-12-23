@@ -41,12 +41,12 @@ body {
 }
 
 .container {
-    width: 1158px;
+    width: 1128px;
     margin-left: auto;
     margin-right: auto;
-/*     padding-left: 15px;
+    padding-left: 15px;
     padding-right: 15px;
- */   /*  outline: 2px solid tomato;  */
+   /*  outline: 2px solid tomato;  */
 }
 
 .list {
@@ -64,9 +64,10 @@ header {
 }
 
 .header {
-   padding-top: 24px;
+/*    padding-top: 24px;
    padding-bottom: 24px; 
-   display: flex;
+ */   
+    display: flex;
    align-items: center;
 }
 
@@ -76,6 +77,11 @@ header {
 
 .header-list {
     display: flex;
+}
+
+.menu-item {
+    padding-top: 24px;  
+    padding-bottom: 24px;
 }
 
 .header-list-item:not(:last-child) {
@@ -105,6 +111,8 @@ header {
 .logo {
     display: block;
     margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
@@ -114,6 +122,11 @@ header {
     text-transform: uppercase;
 
     color: var(--main-text-color);  
+}
+
+.contacts-item {
+    padding-top: 24px;  
+    padding-bottom: 24px;
 }
 
 
@@ -161,6 +174,9 @@ header {
 }
 
 .hero-title {
+    width: 500px;
+    margin: 0 auto;
+    
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
@@ -179,8 +195,11 @@ header {
 .hero-button {
 
     margin-top: 48px; 
+    padding: 16px 32px;
+    gap: 10px;
     border: 0;
     outline: none;
+    border-radius: 4px;
 
     background-color: var(--button-text-color);
     font-weight: 600;
@@ -208,7 +227,7 @@ header {
 .skills-list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 .visually-hidden {
@@ -248,7 +267,7 @@ header {
 .mission-list {
     margin-top: 72px;
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 .mission-title {
@@ -297,14 +316,6 @@ header {
     text-align: center;
 }
 
-.team-description {
-    margin-bottom: 32px;
-}
-
-.card-team-descr {
-    padding: 32px 16px;
-}
-
 .team-description,
 .filter-gallery-descr {
     font-weight: 400;
@@ -320,11 +331,14 @@ header {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+
+    padding: 32px 0;
+
 }
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 .team-list-item {
@@ -368,6 +382,10 @@ header {
 }
 
 /* ----------Portfolio------- */
+.filter .container {
+    box-sizing: content-box;
+}
+
 .filter{
     padding-top: 96px;
     padding-bottom: 120px;
@@ -378,6 +396,13 @@ header {
 
     margin-bottom: 72px;
 }
+
+.filter-button {
+    padding: 12px 24px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+}
+
 
 .filter-list-buttons .filter-list-item + .filter-list-item {
     margin-left: 24px;
@@ -401,7 +426,6 @@ header {
 
 .filter-list-gallery {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
@@ -428,4 +452,8 @@ header {
 
 .card-gallery-descr {
     padding: 32px 16px;
+}
+
+.filter-gallery-item .card{
+    padding: 0;
 }
